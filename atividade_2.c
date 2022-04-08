@@ -1,6 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#ifdef _WIN32
+#define limpa  "cls"
+#else
+#define limpa  "clear"
+#endif
+
 
 
 void exer_1();
@@ -17,7 +23,7 @@ int entrada;
 menu();
 printf("\nEntrada: ");
 scanf("%d", &entrada);
-system("clear");
+system(limpa);
 
 
 for (int x =1; x!=0;){
@@ -56,7 +62,7 @@ for (int x =1; x!=0;){
     printf("\nEntrada: ");
     scanf("%d", &entrada);
     
-    system("clear");
+    system(limpa);
 
 
 
@@ -80,7 +86,7 @@ return 0;
 
 void exer_1(){
     float nota1,nota2,media;
-    system("clear");
+    system(limpa);
     printf("Programa Que calcula a média de duas notas do aluno\nE informa se esta aprovado ou não.\n");
     for (int x=1;x!=0;){
     
@@ -102,19 +108,19 @@ void exer_1(){
     printf("\nDigite 1 para repetir.\nDigite 0 para voltar ao menu.\n");
     printf("Entrada: ");
     scanf("%d",&x);
-    system("clear");
+    system(limpa);
     printf("Programa Que calcula a média de duas notas do aluno\nE informa se esta aprovado ou não.\n");
     }
     
     }
-    system("clear");
+    system(limpa);
     menu();
 }
 
 
 void exer_2(){
     float vetor[4],soma=0;
-    system("clear");
+    system(limpa);
     for(int x=1;x!=0;){
     printf("\nPrograma que imprime a soma do conteudo de um vetor de 5 posições.");
     soma = 0;
@@ -127,12 +133,12 @@ void exer_2(){
     printf("\nDigite 1 para repetir.\nDigite 0 para voltar ao menu.\n");
     printf("Entrada: ");
     scanf("%d",&x);
-    system("clear");
+    system(limpa);
     
     
     }
     
-    system("clear");
+    system(limpa);
     menu();
 }
 
@@ -140,7 +146,7 @@ void exer_2(){
 void exer_3(){
     
     int vetor[4],troca;
-    system("clear");
+    system(limpa);
     for(int x=1;x!=0;){
     printf("\nPrograma que imprime o maior numero de um vetor de 5 posições.");
     for (int i=0;i<5;i++){
@@ -161,19 +167,19 @@ void exer_3(){
     printf("\nDigite 1 para repetir.\nDigite 0 para voltar ao menu.\n");
     printf("Entrada: ");
     scanf("%d",&x);
-    system("clear");
+    system(limpa);
     
     
     }
     
-    system("clear");
+    system(limpa);
     menu();
 }
 
 
 void exer_4(){
     int vetor[4],soma=0,media;
-    system("clear");
+    system(limpa);
     for(int x=1;x!=0;){
     printf("\nPrograma que imprime a soma e media do conteudo de um vetor de 5 posições.");
     soma = 0;
@@ -191,19 +197,19 @@ void exer_4(){
     printf("\nDigite 1 para repetir.\nDigite 0 para voltar ao menu.\n");
     printf("Entrada: ");
     scanf("%d",&x);
-    system("clear");
+    system(limpa);
     
     
     }
     
-    system("clear");
+    system(limpa);
     menu();    
 }
 
 
 void exer_5(){
     int vetor[3][5],soma=0;
-    system("clear");
+    system(limpa);
     for(int x=1;x!=0;){
     printf("\nPrograma que imprime a soma do conteudo de um vetor de 5 posições.");
     soma = 0;
@@ -219,12 +225,12 @@ void exer_5(){
     printf("\nDigite 1 para repetir.\nDigite 0 para voltar ao menu.\n");
     printf("Entrada: ");
     scanf("%d",&x);
-    system("clear");
+    system(limpa);
     
     
     }
     
-    system("clear");
+    system(limpa);
     menu();
    
 }
@@ -253,7 +259,7 @@ void exer_6(){
     printf("\nDigite 1 para repetir.\nDigite 0 para voltar ao menu.\n");
     printf("Entrada: ");
     scanf("%d",&x);
-    system("clear");
+    system(limpa);
     }
     menu();
 
